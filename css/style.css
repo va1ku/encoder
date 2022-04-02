@@ -1,0 +1,177 @@
+@charset "UTF-8";
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/*--------------------*/
+.encoder {
+  min-height: 100%;
+  color: #2d28d7;
+}
+
+.encoder__wrapper {
+  width: 50vw;
+  margin: 0 auto;
+  text-align: center;
+  padding: 30vh 0 50px 0;
+}
+
+.encoder__form {
+  padding: 0 0 50px 0;
+}
+
+.encoder__textInput {
+  padding: 0 0 30px 0;
+}
+
+.encoder__textInput textarea {
+  width: 50vw;
+  height: 10vh;
+  resize: none;
+  background: #6c69e3;
+  border: 1px solid #000;
+}
+
+.encoder__textInput textarea:focus {
+  -webkit-box-shadow: 0 0 10px #000;
+          box-shadow: 0 0 10px #000;
+}
+
+.encoder__title {
+  font-size: 20px;
+  font-weight: 500;
+  margin: 0 0 20px 0;
+  text-align: start;
+}
+
+.encoder__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.encoder__select option {
+  font-size: 10px;
+}
+
+.encoder__select select {
+  border: 1px solid #000;
+  -webkit-box-shadow: 0 0 1px #000;
+          box-shadow: 0 0 1px #000;
+  height: 40px;
+  width: 35vw;
+  min-width: 100px;
+  background: #6c69e3;
+}
+
+.encoder__select select:focus {
+  -webkit-box-shadow: 0 0 5px #000;
+          box-shadow: 0 0 5px #000;
+}
+
+.encoder__but button {
+  background: url(/img/arrow_right_icon_125381.svg) center/100% 100% no-repeat, #6c69e3;
+  height: 25px;
+  width: 5vw;
+  min-width: 30px;
+}
+
+.encoder__but button:hover {
+  border: 1px solid #000;
+}
+
+.encoder__but button:focus {
+  -webkit-box-shadow: 0 0 2px #000;
+          box-shadow: 0 0 2px #000;
+}
+
+.encoder__result {
+  width: 50vw;
+  margin: 0 auto;
+  text-align: center;
+  height: 100px;
+  border: 1px solid #000;
+  -webkit-box-shadow: 0 0 10px #000;
+          box-shadow: 0 0 10px #000;
+  overflow: auto;
+  padding: 10px 5px;
+  font-size: 17px;
+}

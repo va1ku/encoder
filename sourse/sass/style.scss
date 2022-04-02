@@ -1,0 +1,99 @@
+@import "_null";
+
+.encoder{
+	min-height: 100%;
+	color: #2d28d7;
+
+	&__wrapper{
+		width: 50vw;
+		margin: 0 auto;
+		text-align: center;
+		padding: 30vh 0 50px 0 ;
+	}
+
+	&__form {
+		padding: 0 0 50px 0;
+	}
+	
+
+	&__textInput {
+		
+		& textarea{
+			width: 50vw;
+			height: 10vh;
+			resize: none;
+			background: #6c69e3;
+			border: 1px solid #000;
+			
+			
+			
+		 }
+		 & textarea:focus{
+			box-shadow:  0 0 10px #000;
+		 }
+		 padding: 0 0 30px 0;
+	}
+
+	&__title {
+		font-size: 20px;
+		font-weight: 500;
+		margin: 0 0 20px 0;
+		text-align: start;
+	}
+
+	&__flex{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 20px;
+		flex-wrap: wrap;
+	}
+
+	&__select {
+		& option{
+			font-size: 10px;
+		}
+		& select{
+			border: 1px solid #000;
+			box-shadow:  0 0 1px #000;
+			height: 40px;
+			width: 35vw;
+			min-width: 100px;
+			background: #6c69e3;
+			
+		}
+		& select:focus{
+			box-shadow:  0 0 5px #000;
+		 }
+	}
+
+	&__but {
+		& button{
+
+			background: url(/img/arrow_right_icon_125381.svg) center/ 100% 100% no-repeat ,  #6c69e3;
+			height: 25px;
+			width: 5vw;
+			min-width: 30px;
+		}
+		& button:hover{
+			border: 1px solid #000
+		}
+		& button:focus{
+			box-shadow:  0 0 2px #000;
+		 }
+	
+	}
+
+	&__result {
+		width: 50vw;
+		margin: 0 auto;
+		text-align: center;
+		height: 100px;
+		border: 1px solid #000;
+		box-shadow: 0 0 10px #000;
+		overflow: auto;
+		padding: 10px 5px;
+		font-size: 17px;
+	}
+}
+
