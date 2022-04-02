@@ -1,5 +1,6 @@
 @charset "UTF-8";
 /*Обнуление*/
+@import url("https://fonts.googleapis.com/css2?family=Lavishly+Yours&family=PT+Sans+Narrow:wght@400;700&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -73,6 +74,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*--------------------*/
+body {
+  background-color: #ebeff3;
+  font-family: 'Lavishly Yours', cursive;
+  font-family: 'PT Sans Narrow', sans-serif;
+}
+
 .encoder {
   min-height: 100%;
   color: #2d28d7;
@@ -82,7 +89,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 50vw;
   margin: 0 auto;
   text-align: center;
-  padding: 30vh 0 50px 0;
+  padding: 20vh 0 50px 0;
 }
 
 .encoder__form {
@@ -94,11 +101,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .encoder__textInput textarea {
+  padding: 0 5px;
+  font-weight: 500;
+  font-size: 22px;
   width: 50vw;
-  height: 10vh;
+  height: 15vh;
   resize: none;
   background: #6c69e3;
   border: 1px solid #000;
+  border-radius: 10px;
 }
 
 .encoder__textInput textarea:focus {
@@ -106,11 +117,27 @@ h1, h2, h3, h4, h5, h6 {
           box-shadow: 0 0 10px #000;
 }
 
+.encoder__textInput textarea::-webkit-input-placeholder {
+  color: #1f1c1c;
+}
+
+.encoder__textInput textarea:-ms-input-placeholder {
+  color: #1f1c1c;
+}
+
+.encoder__textInput textarea::-ms-input-placeholder {
+  color: #1f1c1c;
+}
+
+.encoder__textInput textarea::placeholder {
+  color: #1f1c1c;
+}
+
 .encoder__title {
   letter-spacing: 3px;
-  font-size: 20px;
+  font-size: 30px;
   font-weight: 500;
-  margin: 0 0 20px 0;
+  margin: 0 0 50px 0;
   text-align: start;
 }
 
@@ -125,8 +152,8 @@ h1, h2, h3, h4, h5, h6 {
       -ms-flex-align: center;
           align-items: center;
   gap: 20px;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -ms-flex-wrap: no-wrap;
+      flex-wrap: no-wrap;
 }
 
 .encoder__select option {
@@ -134,6 +161,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .encoder__select select {
+  border-radius: 3px;
+  font-weight: 500;
+  font-size: 22px;
   border: 1px solid #000;
   -webkit-box-shadow: 0 0 1px #000;
           box-shadow: 0 0 1px #000;
@@ -149,7 +179,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .encoder__but button {
-  background: url(/img/arrow_right_icon_125381.svg) center/100% 100% no-repeat, #6c69e3;
+  display: none;
+  background: url(./../../img/arrow_right_icon_125381.svg) center/100% 100% no-repeat, #6c69e3;
+  border-radius: 10px;
   height: 25px;
   width: 5vw;
   min-width: 30px;
@@ -164,7 +196,12 @@ h1, h2, h3, h4, h5, h6 {
           box-shadow: 0 0 2px #000;
 }
 
+.encoder__but .active {
+  display: block;
+}
+
 .encoder__result {
+  border-radius: 10px;
   width: 50vw;
   margin: 0 auto;
   text-align: center;
